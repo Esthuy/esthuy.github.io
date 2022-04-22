@@ -4,8 +4,10 @@
 
 body{
   font-family: 'Lato', sans-serif;
+  font-size: 18px;
   color: #737373;
   padding: 3rem;
+  padding-top: 1.8rem;
 }
 
 
@@ -72,6 +74,7 @@ body{
 /* About me */
 
 .title{
+  font-family: 'Josefin Sans', sans-serif;
   font-size: 2rem;
   padding-left: 2.5rem;
   
@@ -82,7 +85,7 @@ body{
 }
 
 .skills{
-  margin: 0 auto;
+  padding-left: 4rem;
 }
 
 
@@ -102,9 +105,7 @@ body{
 
 .reversed{
   flex-direction: row-reverse;
-  gap: 1rem;
 }
-
 
 .text{
   width: 40%;
@@ -112,6 +113,10 @@ body{
  
 .image{
   width: 50%;
+}
+
+hr{
+  width: 80%;
 }
 
 
@@ -132,7 +137,6 @@ body{
 }
 
 
-
 footer{
   text-align: center;
 }
@@ -140,22 +144,73 @@ footer{
 
 
 
+
+/* tablet */
+
 @media screen and (max-width: 900px) {
-  img{
-    width: 250px;
-    margin-left: 1.5rem;
-  }
 
   body{
     padding: 1rem;
   }
 
+  .header{
+    margin-right: 0;
+    padding-bottom: 0;
+  }
+
+  img{
+    width: 250px;
+    margin-left: 1.5rem;
+  }
+
+  .intro{
+    width: 200%;
+    padding-top: 5rem;
+  }
+
+  .container{
+    padding-top: 3rem;
+    padding-bottom: 0;
+  }
+
+  /* Project */
+
   .container_project{
     padding: 0.5rem;
+    width: 85%;
   }
+
+  .imgProject{
+    width: 100%;
+    margin-left: -0.5rem;
+  } 
+
+  /* About me */
+  
+  h4{
+    text-align: center;
+    padding-left: 1rem;
+  }
+
+  .cv{
+    margin-left: 0rem;
+  }
+
 }
 
+
+
+
+/* Phone */
+
 @media screen and (max-width: 479px) {
+  
+  body{
+    padding: 0rem;
+  }
+
+  /* Intro */
+
   .container {
      flex-direction: column;
      padding: 0rem;
@@ -166,25 +221,26 @@ footer{
 
   .header{
     padding-top: 1rem;
+    padding-left: 0.5rem;
   }
+
+  .intro{
+    width: 100%;
+    padding-top: 0rem;
+  }
+
 
   .welcome{
     padding: 0rem;
   }
-
   
   img{
     width: 250px;
-    margin-left: 3rem;
+    margin-left: 3.4rem;
   }
 
-  body{
-    padding: 0rem;
-  }
-
-  .aboutMe{
-    padding-left: 0.5rem;
-  }
+  
+  /* Project */
 
   .container_project{
     flex-direction: column;
@@ -196,7 +252,15 @@ footer{
   }
 
   .imgProject{
-    margin-left: -3.5rem;
+    margin-left: -4.5rem;
+    width: 300px;
+  }
+
+
+  /* About Me */
+
+  .aboutMe{
+    padding-left: 0.5rem;
   }
 
   .container_cv{
