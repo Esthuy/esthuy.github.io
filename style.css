@@ -70,12 +70,16 @@ body{
 
 
 
+
 /* About me */
 
 .title{
   font-family: 'Josefin Sans', sans-serif;
   font-size: 2rem;
   padding-left: 2.5rem;
+  background-image: url("img/gold.png");
+  background-repeat: no-repeat; 
+
 }
 
 .aboutMe{
