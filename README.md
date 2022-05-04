@@ -1,4 +1,4 @@
-# esthuy
+# Esthuy
 
 Here is my portfolio, where you'll find my resume and my latest projects. 
 
