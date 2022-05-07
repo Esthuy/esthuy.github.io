@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Lato&family=Quattrocento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Lato:wght@300;400&family=Quattrocento&family=Roboto:wght@100;300&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
 
-body{
-  font-family: 'Lato', sans-serif;
+body {
+  font-family: 'Roboto', sans-serif;
   font-size: 20px;
   color: #737373;
   padding: 3rem;
@@ -13,7 +16,7 @@ body{
 
 /* Nav */
 
-.name{
+.name {
   text-align: center;
   width: auto;
   margin: 10 auto;
@@ -29,7 +32,7 @@ body{
 }
 
 
-.link{
+.link {
   font-family: 'Lato', sans-serif;
   font-size: 1.2rem;
   text-decoration: none;
@@ -42,16 +45,15 @@ body{
 
 /* Intro */
 
-.container{
+.container {
   padding: 2rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  /* background-color: #f8caea; */
 }
 
 
-.header{
+.header {
   order: 1;
   padding: 3rem;
   width: auto;
@@ -60,11 +62,11 @@ body{
   font-family: 'Josefin Sans', sans-serif;
 }
 
-.welcome{
+.welcome {
   padding-top: 3rem;
 }
 
-.picture{
+.picture {
   order: 2;
 }
 
@@ -73,20 +75,17 @@ body{
 
 /* About me */
 
-.title{
+.title {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 2rem;
   padding-left: 2.5rem;
-  background-image: url("img/gold.png");
-  background-repeat: no-repeat; 
-
 }
 
-.aboutMe{
+.aboutMe {
   padding-left: 3rem;
 }
 
-.skills{
+.skills {
   padding-left: 4rem;
 }
 
@@ -94,7 +93,7 @@ body{
 
 /* Projects */
 
-.container_project{
+.container_project {
   display: flex;
   flex-direction: row;
   justify-content: center; 
@@ -105,20 +104,23 @@ body{
   gap: 3rem;
 }
 
-.reversed{
+.reversed {
   flex-direction: row-reverse;
 }
 
-.text{
+.text {
   width: 40%;
 }
  
-.image{
+.image {
   width: 50%;
 }
 
-hr{
+hr {
   width: 80%;
+  border: none;
+  height: 0.8px;
+  background-color: rgba(0, 0, 0, 0.541);
 }
 
 
@@ -126,27 +128,35 @@ hr{
 
 /* Contact */
 
-.container_cv{
+.container_cv {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.cv{
+.cv {
   order: 2;
   width: 600px;
 }
 
-h4{
+h4 {
   text-align: center;
   padding-left: 6rem;
   padding-right: 6rem;
 }
 
 
-footer{
+footer {
   text-align: center;
+}
+
+.linkLogo {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #737373;
+  padding-right: 1.5rem;
 }
 
 
@@ -157,60 +167,64 @@ footer{
 
 @media screen and (max-width: 900px) {
 
-  body{
+  body {
     padding: 1rem;
   }
 
-  .header{
+  .header {
     margin-right: 0;
     padding-bottom: 0;
   }
 
-  img{
+  img {
     width: 250px;
     margin-left: 1.5rem;
   }
 
-  .intro{
+  .intro {
     width: 200%;
     padding-top: 6rem;
   }
 
-  .container{
+  .container {
     padding-top: 3rem;
     padding-bottom: 0;
   }
 
-  .title{
+  .title {
     padding-left: 2.5rem; 
   }
 
   /* Project */
 
-  .container_project{
+  .container_project {
     padding: 0.5rem;
     width: 85%;
   }
 
-  .imgProject{
+  .imgProject {
     width: 100%;
     margin-left: -0.5rem;
   } 
 
   /* Contact */
 
-  .englishResume{
+  .englishResume {
     padding-left: 3rem;
   }
   
-  h4{
+  h4 {
     text-align: center;
     padding-left: 1rem;
     padding-right: 2rem;
   }
 
-  .cv{
+  .cv {
     margin-left: 0rem;
+  }
+
+  .imgLogo {
+    width: 2.5%;
   }
 
 }
@@ -222,7 +236,7 @@ footer{
 
 @media screen and (max-width: 479px) {
   
-  body{
+  body {
     padding: 0rem;
   }
 
@@ -233,46 +247,45 @@ footer{
      padding: 0rem;
      justify-content: left;
      align-items: left; 
-    
   }
 
-  .header{
+  .header {
     padding-top: 1rem;
     padding-left: 0.5rem;
   }
 
-  .intro{
+  .intro {
     width: 100%;
     padding-top: 0rem;
   }
 
 
-  .welcome{
+  .welcome {
     padding: 0rem;
   }
   
-  img{
+  img {
     width: 250px;
     margin-left: 3.4rem;
   }
 
-  .title{
+  .title {
     padding-left: 1rem; 
   }
   
   /* Project */
 
-  .container_project{
+  .container_project {
     flex-direction: column;
     padding: 0.5rem;
     padding-top: -1rem;
   }
 
-  .text{
+  .text {
     width: 100%;
   }
 
-  .imgProject{
+  .imgProject {
     margin-left: -4.5rem;
     width: 300px;
   }
@@ -280,27 +293,36 @@ footer{
 
   /* Contact */
 
-  .aboutMe{
+  .aboutMe {
     padding-left: 0.5rem;
   }
   
-  .englishResume{
+  .englishResume {
     padding-left: 0rem;
   }
 
-  .container_cv{
+  .container_cv {
     padding-left: 1.5rem;
   }
 
-  h4{
+  h4 {
     text-align: center;
     padding-left: 2.2rem;
     padding-right: 3rem;
   }
 
-  .cv{
+  .cv {
     width: 300px;
     margin-left: -0.5rem;
+  }
+
+  
+  .imgLogo {
+    width: 5%;
+  }
+
+  .linkLogo {
+    margin-left: -48px;
   }
 }
 

@@ -10,9 +10,6 @@
 <body>
 
 
-    <!-- TODO  Ajouter cercle au dessus de portfolio et ligne de peinture sous titre-->
-    <!-- Titre avec couleur de fond  -->
-    <!-- Revoir orthographe et textes -->
 <header>
     <h2 class="name">Estelle Huynen</h2>
 
@@ -35,12 +32,12 @@
             <p class="intro">I'm a 25 year old junior fullstack developer, currently finishing my training at Technifutur®.
                 I'm working on Java and Angular, and I enjoy it a lot. 
                 <br>
-                Here you will find my resume and my latest projects. 
+                I'm looking for a 6 week internship starting in august.
             </p>
         </div>
 
         <div class="picture">
-            <img src="img/me.png">
+            <img src="img/me.png" alt="Picture of me">
         </div>
     </div>
 </header>
@@ -54,114 +51,119 @@
         <div>
             <p>I've started working as a student when I was 15, which helped me grow, personally and financially. 
                 I've developed a high stress resistance level and I learned a lot about communication, conflict resolution, team management and organisation.
-                Now I'm a trainee at Technifutur®,  learning to code with java / Angular, and related technologies. 
+                Now I'm a trainee at Technifutur®,  learning to code with Java / Angular, and related technologies. 
                 <br>
                 I enjoy team work and I love to learn new skills to keep improving myself. 
                 <br>
-                I'm looking for a 6 week internship starting in august. I would love to work with Java and Angular but either one is fine too. 
+                Here you will find my resume and my latest projects.  
             </p>
         </div>
 
-        <div class="skills">
-            <ul>
-                <li>Java</li>
-                <li>Angular</li>
-                <li>Html / Css / Js</li>
-                <li>POO</li>
-                <li>GIT</li>
-            </ul>
-        </div>
     </div>
 </section>
 
+<br>
+<section id="projects">
+    <div class="title">
+        <h1>Projects</h1>
+    </div>
 
-    <section id="projects">
-        <div class="title">
-            <h1>Projects</h1>
-        </div>
+    <div class="container_project">
 
-        <div class="container_project">
-
-            <p class="text" >Click on the game to start playing. You can change the settings (numbers of color to find, number of tries, colors, etc.)
-                and if you want to start playing directly, simply choose your firsts colors and press enter when the button is displayed.
-                This was my first project in angular, I'm happy about it even if I would do it a lot differently today. First of all, I would use services
-                instead of way to many input/output (but we haven't learned the services at the time). <br>
-                Enjoy your game ! <br>
-                <a target="_blank" href="https://esthuy.github.io/mastermind/">Click to play mastermind</a>
-            </p>
-
-          
-        <a href="https://esthuy.github.io/mastermind/" class="image"> 
-            <img src="img/mastermind.jpg" class="imgProject">
-        </a>
-        </div>
-
-        <br><hr><br>
-        
-        <div class="container_project reversed">
-
-            <p class="text" >
-                This project is a restaurant comparator. Where the user can create an account and add reviews to restaurants. 
-                This application also allows users to add a restaurant to their favorites list, add a new restaurant to the list and display the restaurants by rates or alphabetic order. 
-                <br>
-                This was my first project using Java and Angular. You can see my code on github by clicking on the image.  
-            </p>
-
-          
-        <a href="https://github.com/Esthuy/restaurant" class="image"> 
-            <img src="img/restaurant.jpg" class="imgProject">
-        </a>
-        </div>
-
-        <br><hr><br>
+        <p class="text" >
+            This was my first project in angular, I'm happy about it even if I would do it a lot differently today. First of all, I would use services
+            instead of way to many input/output (but we haven't learned the services at the time). <br>
+            Click on the game to start playing. You can change the settings (numbers of color to find, number of tries, colors, etc.)
+            and if you want to start playing directly, simply choose your firsts colors and press enter when the button is displayed. <br>
+            Enjoy your game ! <br>
+            <a target="_blank" href="https://esthuy.github.io/mastermind/">Click to play mastermind</a>
+        </p>
 
         
-        <div class="container_project">
+    <a target="_blank" href="https://esthuy.github.io/mastermind/" class="image"> 
+        <img src="img/mastermind.jpg" class="imgProject" alt="Mastermind project">
+    </a>
+    </div>
 
-            <p class="text">
-                Here is a small project on angular with a json database.
-                It's a task list that allow you to add a new task, display the list (with pagination, order, and a searsh bar) or a single task (and to delete or modify it). <br>
-                <a target="_blank" href="https://esthuy.github.io/mastermind/">Go to tasklist</a>
-            </p>
+    <br><hr><br>
+    
+    <div class="container_project reversed">
 
-            <a href="https://esthuy.github.io/mastermind/" class="image"> 
-                <img src="img/taskList.jpg" class="imgProject">
-            </a>
+        <p class="text" >
+            This project is a restaurant comparator. Where the user can create an account and add reviews to restaurants. 
+            This application also allows users to add a restaurant to their favorites list, add a new restaurant to the list and display the restaurants by rates or alphabetic order. 
+            <br>
+            This was my first project using Java and Angular. You can see my code on github by clicking on the image.  
+        </p>
+
         
-        </div>
+    <a target="_blank" href="https://github.com/Esthuy/restaurant" class="image"> 
+        <img src="img/restaurant.jpg" class="imgProject" alt="Restaurant project">
+    </a>
+    </div>
 
-    </section>
-  
+    <br><hr><br>
 
+    
+    <div class="container_project">
 
-
-    <section id="contact">
-        <div class="title">
-            <h1>Contact</h1>
-        </div>
-
-            <div class="container_cv">
-
-                <p class="englishResume">If you want an english version of my resume, please contact me at estellehuynen@outlook.be</p>
-
-                <h4>If you have any feedback about my webiste or my projects, please don't hesitate to contact me ! I would be happy to learn and improve my work</h4>
+        <p class="text">
+            Here is a small project on angular with a json database.
+            It's a task list that allow you to add a new task, display the list (with pagination, order, and a searsh bar) or a single task (and to delete or modify it). <br>
             
-                    <div>
-                        <img src="img/Cv Estelle Huynen - Masqué.jpg" class="cv">
-                    </div>
+            However, because this project works with a db.json, it canot be modified via this link. So if you try to add/ delete or modify a task, it won't work. 
 
-             </div>
-    </section>
+        <br>If you want to be able to completly use this code, you have to clone my repository, and then follow the steps written in my README. <br>
+        <a target="_blank" href="https://esthuy.github.io/tasklist/taskList">Go to tasklist</a><br>
+        </p>
+
+        <a target="_blank" href="https://esthuy.github.io/tasklist/taskList" class="image"> 
+            <img src="img/taskList.jpg" class="imgProject" alt="TaskList project">
+        </a>
+    
+    </div>
+
+</section>
+
+
+
+<br>
+<section id="contact">
+    <div class="title">
+        <h1>Contact</h1>
+    </div>
+
+        <div class="container_cv">
+
+            <p class="englishResume">If you want an english version of my resume, please contact me at estellehuynen@outlook.be</p>
+
+            <h4>If you have any feedback about my webiste or my projects, please don't hesitate to contact me ! I would be happy to learn and improve my work</h4>
+        
+                <div>
+                    <img src="img/Cv Estelle Huynen - Masqué.jpg" class="cv" alt="CV">
+                </div>
+
+            </div>
+</section>
 
 
 
 
-
-
+    <br><br><hr><br>
 
     <footer>
         <div>
+            <h4>Contact me</h4>
+            <a target="_blank" href="https://www.linkedin.com/in/estelle-huynen/" class="linkLogo"> <img src="img/linkedin.png" alt="LinkedIn Logo" class="imgLogo"> LinkedIn</a>
+
+            <a target="_blank" href="https://github.com/Esthuy" class="linkLogo"> <img src="img/github.png" alt="Github Logo" class="imgLogo"> Github</a>
+
+            <a target="_blank" href="mailto:estellehuynen@outlook.be" class="linkLogo"> <img src="img/mail.jpg" alt="Mail Logo" class="imgLogo"> Mail</a>
+        </div><br>
+        <div>
             <h4>Thank you for reading, have a nice day !</h4>
+
+            <p>By Estelle Huynen <br> ©2022</p>
         </div>
     </footer>
 
