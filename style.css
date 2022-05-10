@@ -19,7 +19,6 @@ body {
 .name {
   text-align: center;
   width: auto;
-  margin: 10 auto;
   font-size: 2rem;
   font-family: 'Josefin Sans', sans-serif;
 }
@@ -246,7 +245,6 @@ footer {
      flex-direction: column;
      padding: 0rem;
      justify-content: left;
-     align-items: left; 
   }
 
   .header {
